@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import '@fontsource/plus-jakarta-sans/700.css';
+@import '@fontsource/plus-jakarta-sans/800.css';
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+
+@theme inline {
+  --color-brand-green: #22C55E;
+  --color-brand-green-dark: #16A34A;
+  --color-brand-lavender: #F0EBF8;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+/* Force light mode — prevent Tailwind v4 dark mode CSS variables from inverting colors */
+:root {
+  color-scheme: light only;
+}
+
+html {
+  background-color: #F0EBF8;
+}
+
+body {
+  background-color: #F0EBF8 !important;
+  font-family: "DM Sans", sans-serif;
+  color: #111827 !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
