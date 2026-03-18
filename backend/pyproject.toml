@@ -1,0 +1,16 @@
+[tool.pycodestyle]
+max-line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pyright]
+reportMissingModuleSource = false
+reportMissingTypeStubs = false
+pythonVersion = "3.12"
